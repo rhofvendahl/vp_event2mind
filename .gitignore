@@ -1,0 +1,5 @@
+.DS_Store
+.env
+venv
+not_data/
+.pytest_cache/
