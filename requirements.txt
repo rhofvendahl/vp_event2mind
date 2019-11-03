@@ -1,11 +1,15 @@
-https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
+# https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
 # https://github.com/huggingface/neuralcoref-models/releases/download/en_coref_md-3.0.0/en_coref_md-3.0.0.tar.gz
 # https://github.com/huggingface/neuralcoref-models/releases/download/en_coref_sm-3.0.0/en_coref_sm-3.0.0.tar.gz
 # https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz
+# torch==1.3.0+cpu --install-option='-f' https://download.pytorch.org/whl/torch_stable.html
+# torch==1.3.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+# torch==1.3.0+cpu
+https://download.pytorch.org/whl/cpu/torch-1.3.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
 certifi==2018.10.15
 chardet==3.0.4
 Click==7.0
-cymem<1.32,>=1.30
+cymem==2.0.2
 cytoolz==0.9.0.1
 dill==0.2.8.2
 Flask==1.0.2
@@ -19,15 +23,15 @@ msgpack-numpy==0.4.3.2
 murmurhash<0.29.0,>=0.28.0
 numpy==1.15.4
 plac==0.9.6
-preshed<2.0.0,>=1.0.0
+preshed==2.0.1
 regex==2018.1.10
 requests==2.20.1
 six==1.11.0
 # spacy==2.0.13 # Downgraded from 2.0.16 to support neuralcoref
 # textacy==0.6.2
 #torch==1.0.*
-allennlp==0.8.0
-thinc<6.11.0,>-6.10.3
+allennlp==0.9.*
+thinc==7.0.8
 toolz==0.9.0
 tqdm==4.28.1
 ujson==1.35
@@ -36,3 +40,4 @@ Werkzeug==0.14.1
 wrapt==1.10.11
 nltk==3.4
 flask_cors
+blis==0.2.4
