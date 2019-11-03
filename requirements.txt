@@ -27,11 +27,11 @@ preshed==2.0.1
 regex==2018.1.10
 requests==2.20.1
 six==1.11.0
-# spacy==2.0.13 # Downgraded from 2.0.16 to support neuralcoref
+spacy==2.1.9 # required by allennlp, but need highest version to allow higher version of thinc
 # textacy==0.6.2
 #torch==1.0.*
-allennlp==0.9.*
-thinc==7.0.8
+allennlp==0.9.0
+thinc==7.0.8 # cannot import  prefer gpu, needs update? but spacy won't let above 7.1.0?
 toolz==0.9.0
 tqdm==4.28.1
 ujson==1.35
