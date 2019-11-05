@@ -10,6 +10,10 @@ CORS(app)
 archive = load_event2mind_archive('data/event2mind.tar.gz')
 event2mind_predictor = Predictor.from_archive(archive)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 def predict(source):
     return event2mind_predictor.predict(source=source)
 
